@@ -1,0 +1,33 @@
+# /etc/conf.d/pmcd: config file for /etc/init.d/pmcd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/pmccore/pmc.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/pmcd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/pmcd.pid"
+
+# Where to write pmcd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/pmcd"
+
+# User and group to own pmcd process
+#BITCOIND_USER="pmccore"
+#BITCOIND_GROUP="pmccore"
+
+# Path to pmcd executable
+#BITCOIND_BIN="/usr/bin/pmcd"
+
+# Nice value to run pmcd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS="-disablewallet"
+
+# The timeout in seconds OpenRC will wait for bitcoind to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+BITCOIND_SIGTERM_TIMEOUT=60

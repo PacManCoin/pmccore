@@ -1,0 +1,22 @@
+[Unit]
+Description=Pmc's distributed currency daemon
+After=network.target
+
+[Service]
+User=pmccore
+Group=pmccore
+
+Type=forking
+PIDFile=/var/lib/pmcd/pmcd.pid
+ExecStart=/usr/bin/pmcd -daemon -pid=/var/lib/pmcd/pmcd.pid \
+-conf=/etc/pmccore/pmc.conf -datadir=/var/lib/pmcd -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

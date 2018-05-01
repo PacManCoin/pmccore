@@ -1,0 +1,6 @@
+usr/local/bin/pmc-qt usr/bin
+share/pixmaps/pmc32.xpm usr/share/pixmaps
+share/pixmaps/pmc16.xpm usr/share/pixmaps
+share/pixmaps/pmc128.png usr/share/pixmaps
+debian/pmc-qt.desktop usr/share/applications
+debian/pmc-qt.protocol usr/share/kde4/services/

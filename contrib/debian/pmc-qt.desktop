@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Pmc
+Comment=Pmc P2P Cryptocurrency
+Comment[fr]=Pmc, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Pmc, eşten eşe kriptografik sanal para birimi
+Exec=pmc-qt %u
+Terminal=false
+Type=Application
+Icon=pmc128
+MimeType=x-scheme-handler/pmc;
+Categories=Office;Finance;

@@ -1,0 +1,3 @@
+debian/manpages/pmcd.1
+debian/manpages/pmc.conf.5
+debian/manpages/pmc-cli.1
