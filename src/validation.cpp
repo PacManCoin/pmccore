@@ -1236,7 +1236,7 @@ CAmount GetBlockSubsidy(int nPrevBits, int nPrevHeight, const Consensus::Params&
 		return 65000000 * COIN; //999999 premine
 	}
 	
-	if(nPrevHeight <= 30000)
+	if(nPrevHeight <= 90000)
 	{
 		return 2 * COIN; //10 days for test.
 	}
